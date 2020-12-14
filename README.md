@@ -63,10 +63,14 @@ After the pretreatment of data, then run
 python main.py --logger_name runs/KddCup2020 --use_dup --no_txtnorm --glove --score_agg mean
 ```
 to run the full model.  
+  
 There are also optional arguments for dataset, initial learning rate, batch size and so on. Check them by
 ```
 python main.py --help
 ```
 ## Testing
-
+As training terminates, the highest performance on validation set is saved for testing. But in this dataset, the organizer doesn't release the ground truth of the test set, so we can only test it on the validation set. You can load it and test on the validation set.
+```
+python main.py --eval_only --resume runs/{your_exp_name}/model_best.pth.tar
+```
 ## Citing
