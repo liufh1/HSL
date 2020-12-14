@@ -50,7 +50,7 @@ After finishing it, the list are as follows.
     |-- data.py
     |-- main.py
     ...
-    |-- vocab.py
+    |-- utils.py
     |-- HSL
         |-- api.py
         |-- data.py
