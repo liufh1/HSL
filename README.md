@@ -41,11 +41,20 @@ python parse_dataset.py
 After finishing it, the list are as follows.  
 ```
 |-- data
+    |-- kddcup_vocab.pkl
     |-- valid
         |-- valid.tsv
+        |-- valid.features.npy
+        |-- valid.ids.txt
+        |-- valid.products.pkl
+        |-- valid.queries.pkl
         |-- valid_answer.json
     |-- train
         |-- train.tsv
+        |-- train.features.npy
+        |-- train.ids.txt
+        |-- train.products.pkl
+        |-- train.queries.pkl
 |-- code
     |-- data.py
     |-- main.py
