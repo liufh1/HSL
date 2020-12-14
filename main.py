@@ -41,8 +41,7 @@ def main():
 
     if opt.glove:
         print("loading glove word2vec......")
-        opt.we_parameter = get_we_parameter(vocab, '/home/qxy/kddcup2020-dev/glove_model.bin')
-        #opt.we_parameter = get_we_parameter(vocab, '../data/glove_model.bin')
+        opt.we_parameter = get_we_parameter(vocab, '../data/glove_model.bin')
     else:
         opt.we_parameter = None
 
