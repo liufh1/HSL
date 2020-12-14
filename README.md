@@ -27,17 +27,46 @@ We use the dataset of the [KDD Cup 2020 Challenges for Modern E-Commerce Platfor
 ```
 |-- data
     |-- valid
-	    |-- valid.tsv
-    	|-- valid_answer.json
-	|-- train
-		|-- train.tsv
+        |-- valid.tsv
+        |-- valid_answer.json
+    |-- train
+        |-- train.tsv
 |-- code
-	|-- 
+    |-- parse_dataset.py
 ```
-
-
+Then run 
+```
+python parse_dataset.py
+```
+After finishing it, the list are as follows.  
+```
+|-- data
+    |-- valid
+        |-- valid.tsv
+        |-- valid_answer.json
+    |-- train
+        |-- train.tsv
+|-- code
+    |-- data.py
+    |-- main.py
+    ...
+    |-- vocab.py
+    |-- HSL
+        |-- api.py
+        |-- data.py
+        ...
+        |-- model.py
+```
 ## Getting Started
-
+After the pretreatment of data, then run
+```
+python main.py --logger_name runs/KddCup2020 --use_dup --no_txtnorm --glove --score_agg mean
+```
+to run the full model.  
+There are also optional arguments for dataset, initial learning rate, batch size and so on. Check them by
+```
+python main.py --help
+```
 ## Testing
 
 ## Citing
