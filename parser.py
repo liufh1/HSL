@@ -68,7 +68,7 @@ def get_parser():
                         help='Basic loss function.')
     parser.add_argument('--top_k', default=20, type=int,
                         help='Top k bounding boxes in terms of area.')
-    parser.set_defaults(model='selfattn')
+    parser.set_defaults(model='HSL')
     parser.add_argument('--img_num_layers', default=6, type=int,
                         help='Number of image encoder layers.')
     parser.add_argument('--txt_num_layers', default=4, type=int,
