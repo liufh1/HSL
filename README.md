@@ -2,6 +2,8 @@
 
 ## Network
 HSL
+![Image](https://github.com/liufh1/HSL/tree/main/img/pipelinebig.pdf)
+
 ## Requirements
 
 ### Environments
