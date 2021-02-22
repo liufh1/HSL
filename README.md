@@ -85,3 +85,11 @@ As training terminates, the highest performance on validation set is saved for t
 python main.py --eval_only --resume runs/{your_exp_name}/model_best.pth.tar
 ```
 ## Citing
+```
+@inproceedings{ma2021hsl,
+title = {Hierarchical-Similarity-Learning-for-Language-based-Product-Image-Retrieval},
+author = {Zhe Ma and Fenghao Liu and Jianfeng Dong and Xiaoye Qu and Yuan He and Shouling Ji},
+booktitle = {International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},
+year = {2021},
+}
+```
