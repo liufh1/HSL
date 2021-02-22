@@ -2,7 +2,7 @@
 
 ## Network
 HSL
-![Image](https://github.com/liufh1/HSL/blob/main/img/pipelinebig.png)
+![Image](https://github.com/liufh1/HSL/blob/main/img/pipelinebig.jpg)
 
 ## Requirements
 
