@@ -26,8 +26,10 @@ conda deactivate
 ### Download Data
 #### Dataset  
 We use the dataset of the [KDD Cup 2020 Challenges for Modern E-Commerce Platform: Multimodalities Recall](https://tianchi.aliyun.com/competition/entrance/231786/information). You can download it in this website. You need to download multimodal_train.zip and multimodal_valid.zip and then unzip them.  
+You can also download pretrained word vectors model "Glove" (http://nlp.stanford.edu/data/glove.42B.300d.zip).
 ```
 |-- data
+    |-- glove_model.bin
     |-- valid
         |-- valid.tsv
         |-- valid_answer.json
@@ -43,6 +45,7 @@ python parse_dataset.py
 After finishing it, the list are as follows.  
 ```
 |-- data
+    |-- glove_model.bin
     |-- kddcup_vocab.pkl
     |-- valid
         |-- valid.tsv
